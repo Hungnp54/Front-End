@@ -402,11 +402,95 @@ h1, h2, h3, h4, h5{
     background: #f97c69;
     opacity: 1;
 }
+/* FOOTER */
+.footerSection{
+    background-color: black;
+    padding: 3em 15px;
+}
 
+.footer_content h4{
+    font-size: 1.7em;
+    color: #f97c69;
+    position: relative;
+    margin-bottom: 1.5em;
+    letter-spacing: 2px;
+}
+.footer_content p{
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 2em;
+    letter-spacing: 1px;
+    color: #bfbfbf;
+}
+.footer_content .footer_subscribe{
+    padding-right: 5em;
+    padding-bottom: 2em;
+}
+.footer_content .footer_subscribe form{
+    border: 1px solid #fff;
+    width: 100%;
+}
+.footer_content .footer_subscribe input{
+    outline: none;
+    padding: 15px 15px;
+    color: #fff;
+    font-size: 14px;
+    width: 88%;
+    border: none;
+    background: rgba(0, 0, 0, 0.22);
+    letter-spacing: 2px;
+}
+.footer_content .footer_subscribe button{
+    color: #fff;
+    border: none;
+    padding: 13px 0;
+    text-align: center;
+    text-decoration: none;
+    background: #7f67f8;
+    transition: 0.5s all;
+    float: right;
+    width: 12%;
+    cursor: pointer;
+}
+.footer_content .footer_link a{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer_content .footer_link ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer_content .contact_items{
+    display: block;
+}
+.footer_content .contact_items p{
+    display: inline;
+}
+.footer_content .contact_items i{
+    margin-right: 13px;
+    color: #f97c69;
+}
+/* FOOTER COPYRIGHT    */
+.copyright{
+    background-color: #252525;
+    text-align: center;
+    padding: 16px 0;
+}
+.copyright p{
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+.copyright a{
+    color: white;
+    transition: all .5s;
+}
+.copyright a:hover{
+    color: #f97c69;
+}
 
-
-
-/* +++++++++++++++++RESPONSIVE++++++++++++++++ */
+/* +++++++++++++++++++++++++++RESPONSIVE++++++++++++++++++++++++ */
 @media screen and (max-width:991.98px) {
     /* Header */
     .navInstruction .bar_items{
