@@ -6,11 +6,31 @@ html, body{
     background: #fff;
     letter-spacing: 1px;
     font-size: 16px;
-    
+    box-sizing: border-box;    
 }
-html{
-    box-sizing: border-box;
+.heading h2{
+    font-size: 3em;
+    color: #2c363e;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 37%);
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
+.heading p{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+    color: #5e5e5e;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+}
+.spaceX{
+    margin-top: 40px ;
+}
+
+
 
 /* HEADER */
 /* HEADER TOP */
@@ -98,27 +118,196 @@ html{
     box-shadow: none;
 }
 
+/* Carousel */
+
+.mergedCarousel{
+    background-image: url('../img/b1.jpg');
+    min-height: 700px;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.mergedCarousel .carouselBackgroundCover{
+    /* background-color: rgba(0, 0, 0, 0.37); */
+    background: rgba(0, 0, 0, 0.37);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+   
+}
 
 
+.mergedCarousel .carousel_block_text{
+   position: absolute;
+   top: 50%;
+   left: 50%;
 
+/* chi ap dung voi the co position absolut */
+     transform: translate(-50%,-50%); 
+}
+.mergedCarousel .carousel_block_text h1{
+    color: white;
+    letter-spacing: .2em;
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 1.4em;
+    
+}
+.mergedCarousel .carousel_block_text p{
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 28px;
+    margin: 20px auto 40px;
+    letter-spacing: 1px;
+}
+.mergedCarousel .carousel_block_text .carousel_button button{
+    padding: 8px 30px;
+    color: white;
+    border-radius: 0;
+    transition: all .8s;
+    margin: 0 2px;
+}
+.mergedCarousel .carousel_block_text .carousel_button .button1{
+    border: 1px solid #fdfdfd;
+   
+}
+.mergedCarousel .carousel_block_text .carousel_button .button2{
+    border: 1px solid #7f67f8;
+    background: #7f67f8;
+    
+    
+}
 
+.mergedCarousel .carousel_block_text .carousel_button .button1:hover{
+    border: 1px solid #7f67f8;
+    background: #7f67f8;
+}
+.mergedCarousel .carousel_block_text .carousel_button .button2:hover{
+    border: 1px solid #fdfdfd;
+    background: none;
+}
 
+.mergedCarousel .carousel_block_text .owl-theme .owl-dots{
+    margin-top: 80px;
+    transition: all .5s;
+}
+ .carousel_block_text .owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;  
+}
+.carousel_block_text .owl-theme .owl-dots .owl-dot.active span {
+    background: #7f67f8; 
+}
 
+/* GETTING SECTION */
+ 
+.gettingTittle{
+    margin-bottom: 50px;
+}
+.gettingSection .bord{
+    background: #e8e8e8;
+    height: 1px;
+    width: 75%;
+    margin: 0 auto 3em;
+}
+.gettingSection .gettingContent{
+    text-align: center;
+    width: 85%;
+}
+.gettingSection .gettingContent i{
+    font-size: 40px;
+    color: #f97c69;
+}
+.gettingSection .gettingContent h3{
+    font-size: 22px;
+    color: #151515;
+    letter-spacing: .075em;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+.gettingSection .gettingContent p{
+    font-size: 15px;
+    margin: 0;
+    color: #777;
+    font-weight: 400;
+    line-height: 1.8em;
 
-
-
-
-
+}
+.gettingSection .gettingContent .mid_box{
+    border-left: 1px solid #e8e8e8 ;
+    border-right: 1px solid #e8e8e8 ;
+}
 
 
 
 
 /* +++++++++++++++++RESPONSIVE++++++++++++++++ */
 @media screen and (max-width:991.98px) {
+    /* Header */
     .navInstruction .bar_items{
         background-color: black;
     } 
     .navInstruction .nav-link{
         color: white;
+    }
+    /* Carousel */
+    .mergedCarousel{
+        min-height: 560px;
+    }
+    .mergedCarousel .carousel_block_text h1{
+        font-size: 4vw;
+    }
+    .mergedCarousel .carousel_block_text p{
+        font-size: 1.8vw;
+    }
+    /* .mergedCarousel .carousel_block_text .carousel_button button{
+        font-size: 1.8vw;
+    } */
+    /* GETTING SECTION */
+    .gettingSection .gettingContent h3{
+        font-size: 20px;
+    }
+    .gettingSection .gettingContent p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768.98px){
+     /* Carousel */
+     .mergedCarousel{
+        min-height: 490px;
+    }
+    .mergedCarousel .carousel_block_text .owl-theme .owl-dots{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:736px){
+    /* Carousel */
+    .mergedCarousel{
+       min-height: 455px;
+   }
+}
+@media screen and (max-width:568px){
+    /* Carousel */
+    .mergedCarousel{
+       min-height: 420px;
+   }
+   .mergedCarousel .carousel_block_text .owl-theme .owl-dots{
+       margin-top: 20px;
+   }
+}
+@media screen and (max-width:575.98px){
+    .gettingSection .gettingContent .mid_box{
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #e8e8e8 ;
+        border-bottom: 1px solid #e8e8e8;
+        margin: 15px 0;
+        padding: 15px 0;
     }
 }
